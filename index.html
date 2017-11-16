@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="suse.css"/>
+    <style type="text/css" media="screen">
+      /* Two-column layout */
+      .left-column {
+        float: left;
+        margin-right: 2em;
+        padding-right: 2em;
+      }
+      .right-column {
+        margin-left: 2em;
+        padding-left: 2em;
+      }
+      .single {
+        clear: both;
+      }
+      .small {
+        font-size: 1em !important;
+      }
+      .tiny {
+        font-size: 0.8em !important;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: cover
+.title[
+# SUSE<sub>®</sub> Presentation
+## Guidelines and Template
+<br/>
+
+.left-column[.center[
+### **First Presenter's Name**
+### Job Title
+### [firstname.lastname@suse.com](mailto:firstname.lastname@suse.com)
+]]
+
+.right-column[.center[
+### **Second Presenter's Name**
+### Job Title
+### [firstname.lastname@suse.com](mailto:firstname.lastname@suse.com)
+]]
+]
+
+---
+
+class: agenda, normal
+## SUSE Presentations
+
+### Welcome to the [`remark.js`](https://remarkjs.com/) version of the guidelines and template for SUSE presentations.
+
+It contains the following slides:
+
+*   Guidelines
+    *   Template Instructions
+    *   Color Palette
+    *   Graphics and Typeface
+    *   Editorial Guidelines
+    *   Slide Trademarking Guidelines
+
+*   Presentation Template
+
+---
+class: normal
+## Template Instructions
+
+### This slide outlines the basic guidelines and instructions to help you use the SUSE presentation template.
+
+*   Remove the `slide-guidelines.md` section from `index.html` before
+    projecting, presenting, or sending to anyone.
+
+*   The goal of this template is to maintain a clear, professional and
+    consistent tone and appearance among all SUSE presentations. The
+    default text boxes in the presentation represent the margins or
+    “working area” to which all text, graphics and diagrams should
+    conform. These margins are not arbitrary, and they are not meant to
+    constrict creativity; when used correctly, they keep the slides
+    focused and leave enough white space so audiences can easily digest
+    the presented material. If you need more room than the margins
+    allow, we suggest moving content to another slide.
+
+
+---
+## Color Palette
+
+.small[
+.left-column[
+<div class="big-swatch bg-SUSE-green">SUSE Green</div>
+<div class="big-swatch bg-dark-blue">Dark Blue</div>
+
+<br clear="left" />
+
+<div class="swatch bg-bright-green fg-bright-blue">Bright Green</div>
+<div class="swatch bg-medium-green">Medium Green</div>
+<div class="swatch bg-bright-teal">Bright Teal</div>
+
+<div class="swatch bg-light-blue">Light Blue</div>
+<div class="swatch bg-bright-blue">Bright Blue</div>
+<div class="swatch bg-bright-royal">Bright Royal</div>
+
+<br clear="left" />
+
+<div class="swatch bg-dark-purple">Dark Purple</div>
+<div class="swatch bg-bright-purple">Bright Purple</div>
+<div class="swatch bg-bright-magenta">Bright Magenta</div>
+<div class="swatch bg-light-magenta">Light Magenta</div>
+
+<br clear="left" />
+
+<div class="swatch bg-dark-orange">Dark Orange</div>
+<div class="swatch bg-medium-orange">Medium Orange</div>
+<div class="swatch bg-light-yellow fg-medium-orange">Light Yellow</div>
+
+<br clear="left" />
+
+<div class="swatch bg-dark-neutral">Dark Neutral</div>
+<div class="swatch bg-medium-dark-neutral">MD/Dark Neutral</div>
+<div class="swatch bg-medium-neutral">Medium Neutral</div>
+<div class="swatch bg-light-neutral fg-medium-dark-neutral">Light Neutral</div>
+<div class="swatch bg-tint-neutral fg-medium-dark-neutral">Tint Neutral</div>
+]
+
+.right-column[
+**Colors:** Approved RGB colors for SUSE®
+presentations have been outlined to ensure color accuracy.
+
+### How to use these SUSE colors:
+<br/>
+
+Simply use CSS classes, e.g.
+* .tiny[`<p class="fg-bright-orange">`]
+* .tiny[<code class="bg-bright-purple" style="color: white; padding: 6px;"> `<li class="bg-bright-purple" style="color: white">` </code>]
+
+or [Sass](http://sass-lang.org/guide) [variables](http://sass-lang.org/guide#topic-2)
+* .tiny[<code class="fg-bright-royal"> .my-class { color: $bright‑royal; } </code>]
+
+For more information on SUSE color palette guidelines,
+visit [www.suse.com/brandcentral](www.suse.com/brandcentral)
+]
+]
+---
+name: graphics-and-typeface
+
+## Graphics and Typeface
+
+<hr/>
+### Primary Icon Color
+
+.left-column[
+<img src="images/SUSE/bars.png" style="width: 150px;" />
+<img src="images/SUSE/disk.png" style="width:  80px;" />
+]
+.right-column[
+**Icons:** Icon libraries are available for download in
+bubble and 3-D designs. The primary color for SUSE is
+green.
+]
+.single[
+<hr/>
+]
+### Bubble
+
+<img src="images/SUSE/folder.png" style="width:  100px;" />
+<img src="images/SUSE/computer.png" style="width:  100px;" />
+<img src="images/SUSE/right-arrow.png" style="width:  100px;" />
+<img src="images/SUSE/squeeze-arrows.png" style="width:  100px;" />
+<img src="images/SUSE/USB.png" style="width:  100px;" />
+<img src="images/SUSE/bug.png" style="width:  100px;" />
+<img src="images/SUSE/cylinder.png" style="width:  100px;" />
+<img src="images/SUSE/brain.png" style="width:  100px;" />
+
+.single[
+<hr/>
+]
+### 3D
+
+<img src="images/SUSE/desktop-computer.png" style="width:  80px;" />
+<img src="images/SUSE/pie.png" style="width:  80px;" />
+<img src="images/SUSE/meters.png" style="width:  80px;" />
+<img src="images/SUSE/office.png" style="width:  80px;" />
+<img src="images/SUSE/printer.png" style="width:  80px;" />
+<img src="images/SUSE/box.png" style="width:  80px;" />
+<img src="images/SUSE/app-window.png" style="width:  80px;" />
+<img src="images/SUSE/darts.png" style="width:  80px;" />
+
+
+---
+name: editorial-guidelines
+## Editorial Guidelines
+
+### To help you achieve a consistent, professional message, general guidelines about SUSE style and grammar usage are outlined below.
+
+.tiny[
+*   **Acronyms**: Acronyms may be used for industry terms provided you
+    spell out the terms at first reference in body copy.  Tables and
+    charts are an exception when real estate is limited. Example: The
+    Independent Software Vendor (ISV) solution …
+
+*   **NEVER** abbreviate product names in external presentations.
+
+*   **Capitalization**: The title of the presentation and the title and
+    subtitle of each slide are the only elements that should be
+    capitalized in title case. All other elements should be
+    capitalized in sentence case (only the first word of each sentence
+    capitalized). This includes bullet points, call outs, emphasized
+    words, table headings and captions.
+
+*   **Hyphenated compounds within titles**: If a hyphenated compound
+    appears in a title, lowercase the word following the hyphen; for
+    example, “Low-cost Alternatives”.
+
+*   **Bulleted lists**: To set off the lead text in bulleted lists (the
+    words “Bulleted lists” in this case), use colons. Try to keep
+    information presented in bulleted lists short, so it is easy for
+    audiences to consume.
+
+*   **Punctuation within bulleted lists**: Be consistent when punctuating
+    bulleted lists. For example, if you choose to use a complete
+    sentence in the first bullet, use complete sentences, and
+    punctuate accordingly for all bullets on that slide.
+
+*   **General punctuation**: Use “and” instead of “&” except in proper
+    names (e.g., AT&T). Write out percent signs.  Tables and charts
+    are the exception when real estate is limited.
+]
+
+---
+# name: trademarking-guidelines
+## Slide Trademarking Guidelines
+
+### The following guidelines are basic rules for product naming and trademarking:
+
+*   **Product naming:** Use the full legal product name at all
+    references within the presentation; no product acronyms or
+    abbreviations are allowed.
+
+*   **Product trademarking:** SUSE® products and
+    selected technologies should be trademarked at first reference on
+    each slide. This will help us legally protect these marks.
+
+*   **Third-party trademarking:** Except for Micro
+    Focus®, SUSE does not reference third-party
+    trademarks.
+
+*   **Trademark design:** Trademarks should be large enough to be
+    recognized, but small enough so they do not distract from the
+    content.
+
+*   **Trademark placement:** The registered trademark symbol
+    (®) should go on the baseline of the text. The
+    trademark and service mark symbols (™, SM) should be arranged so
+    that the top of the symbol is level with the top of the last
+    letter of the word being marked.
+
+
+---
+class: cover
+name: cover-page
+
+<div class="title">
+    <h1>Presentation Title</h1>
+    <h2>Subhead or Second Line</h2>
+</div>
+
+<div class="row presenters">
+    <div class="presenter presenter-1">
+        <h3 class="name">First Presenter's Name</h3>
+        <h3 class="job-title">Job Title</h3>
+        <h3 class="email"><a href="mailto:firstname.lastname@suse.com">firstname.lastname@suse.com</a></h3>
+    </div>
+    <div class="presenter presenter-2">
+        <h3 class="name">Second Presenter's Name</h3>
+        <h3 class="job-title">Job Title</h3>
+        <h3 class="email"><a href="mailto:firstname.lastname@suse.com">firstname.lastname@suse.com</a></h3>
+    </div>
+</div>
+
+---
+name: nested-lists
+## Slide title
+
+*   First-level bullet
+    *   Second-level bullet
+        *   Third-level bullets are a bad idea
+            *   Fourth-level bullets are a terrible idea
+
+Before loading up your presentation with bulleted lists, make sure to
+[read up on whether that's a good idea](https://www.google.com/search?q=slides+bullets).
+
+
+---
+name: section-break-1
+class: section-break
+.section[
+# Section break (style 1)
+## `<h2>` works here too
+]
+
+
+---
+name: section-break-2
+class: section-break-2
+.section[
+# Section break (style 2)
+]
+
+
+---
+name: section-break-3
+class: section-break-3
+.section[
+# Section break (style 3)
+]
+
+
+---
+name: section-break-4
+class: section-break-4
+.section[
+# Section break (style 4)
+]
+
+
+---
+name: syntax-highlighting
+## Code syntax highlighting
+
+Works out of the box using [`highlight.js`](https://highlightjs.org/)
+and a custom color theme with official SUSE colors:
+
+```js
+Reveal.addEventListener('somestate', function() {
+    // TODO: Sprinkle magic
+}, false );
+```
+
+in different languages:
+
+```ruby
+# Ping with 5 seconds timeout and a single attempt
+def ping! node
+  command = ["ping", "-q -c 5 -w 5 #{node.ip}"]
+  result = exec!(*command)
+  if result.exit_code.nonzero?
+    raise PingError.new(command, result.output)
+  end
+  result, :foo
+end
+```
+
+
+---
+name: full-screen-images
+# Full screen images
+
+
+---
+name: full-screen-image-1
+<a title="By Fraser Hart (http://www.hermitagebay.com) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ABeach_pano.jpg">
+    <img alt="Beach pano" src="images/beach-pano-16x9.jpg"/>
+</a>
+
+
+---
+name: full-screen-image-2
+<a title="By Fraser Hart (http://www.hermitagebay.com) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ABeach_pano.jpg">
+    <img alt="Beach pano" src="images/beach-pano-tall.jpg"/>
+</a>
+
+
+---
+name: full-screen-image-3
+<a title="By Fraser Hart (http://www.hermitagebay.com) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ABeach_pano.jpg">
+    <img alt="Beach pano" src="images/beach-pano-wide.jpg"/>
+</a>
+
+---
+name: call-to-action
+<div class="call-to-action">
+    <h2 class="inside">
+        Call to action line one <br />
+        and call to action line two <br />
+        <a href="http://www.calltoaction.com">www.calltoaction.com</a>
+    </h2>
+
+    <h2 class="outside">
+        Thank you.
+    </h2>
+</div>
+
+
+---
+name: Q-and-A
+# Questions?
+
+
+---
+name: SUSE-logo
+<img src="images/SUSE/SUSE-logo-white.png"
+     alt="SUSE® logo"
+     style="width: 25%; height: 25%; margin-top: 20%;"
+     class="full-slide" />
+
+
+---
+name: disclaimers
+
+### Unpublished Work of SUSE LLC. All Rights Reserved.
+
+This work is an unpublished work and contains confidential,
+proprietary and trade secret information of SUSE LLC.  Access to this
+work is restricted to SUSE employees who have a need to know to
+perform tasks within the scope of their assignments.  No part of this
+work may be practiced, performed, copied, distributed, revised,
+modified, translated, abridged, condensed, expanded, collected, or
+adapted without the prior written consent of SUSE.  Any use or
+exploitation of this work without authorization could subject the
+perpetrator to criminal and civil liability.
+
+### General Disclaimer
+
+This document is not to be construed as a promise by any participating
+company to develop, deliver, or market a product.  It is not a
+commitment to deliver any material, code, or functionality, and should
+be relied upon in making purchasing decisions.  SUSE makes no
+representations or warranties with respect to the contents of this
+document, and specifically disclaims any express or implied warranties
+of merchantability or fitness for any particular purpose.  The
+development, release, and timing of features or functionality
+described for SUSE products remains at the sole discretion of SUSE.
+Further, SUSE reserves the right to revise this document and to make
+changes to its content, at any time, without obligation to notify any
+person or entity of such revisions or changes.  All SUSE marks
+referenced in this presentation are trademarks or registered
+trademarks of Novell, Inc. in the United States and other countries.
+All third-party trademarks are the property of their respective
+owners.
+
+
+---
+name: internal-use-slides
+# Internal Use Slides
+
+
+---
+name: internal-cover-page
+<div class="title">
+    <h1>Presentation Title</h1>
+    <h2>Subhead or Second Line</h2>
+</div>
+
+<div class="row presenters">
+    <div class="presenter presenter-1">
+        <h3 class="name">First Presenter's Name</h3>
+        <h3 class="job-title">Job Title</h3>
+        <h3 class="email"><a href="mailto:firstname.lastname@suse.com">firstname.lastname@suse.com</a></h3>
+    </div>
+    <div class="presenter presenter-2">
+        <h3 class="name">Second Presenter's Name</h3>
+        <h3 class="job-title">Job Title</h3>
+        <h3 class="email"><a href="mailto:firstname.lastname@suse.com">firstname.lastname@suse.com</a></h3>
+    </div>
+</div>
+
+<div class="internal-use-footer" style="text-align: center;">
+    For Internal Use Only
+</div>
+
+
+---
+name: internal-normal-slide
+## Internal slide title
+
+*   First-level bullet
+
+<div class="internal-use-footer">
+    For Internal Use Only
+</div>
+
+
+---
+name: license
+<img src="images/by-sa.svg"
+     alt="Creative Commons BY-SA license" />
+
+Note: Add conclusion notes here.
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+var slideshow = remark.create({ratio: '16:9'});
+    </script>
+  </body>
+</html>
