@@ -155,16 +155,16 @@
         border: none;
         background: none;
         box-shadow: none; }
-       .section .full-screen {
+       .full-screen {
         width: 1550px;
         height: 871.875px;
         margin-left: -103px;
         margin-top: -30.9375px;
         max-width: 1000%;
         max-height: 1000%; }
-         .section .full-screen a {
+         .full-screen a {
           position: inherit; }
-         .section .full-screen img, g .section .full-screen iframe {
+         .full-screen img, .full-screen iframe {
           margin: 0 0 0 0;
           height: 100%;
           width: 100%;
